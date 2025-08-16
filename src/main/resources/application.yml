@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: urlShortener
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:h2:mem:testdb}
+    username: ${SPRING_DATASOURCE_USERNAME:sa}
+    password: ${SPRING_DATASOURCE_PASSWORD:}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        "format_sql": true
+server:
+  port: 8080
+  forward-headers-strategy: framework
+
+logging:
+  level:
+    "org.hibernate.SQL": info
+    "org.hibernate.type.descriptor.sql.BasicBinder": info
