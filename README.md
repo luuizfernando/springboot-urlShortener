@@ -1,4 +1,4 @@
-# urlShortener
+# URL Shortener
 
 Spring Boot URL shortener with PostgreSQL, Docker, and Traefik. Supports short links like `https://short.local/{short_code}`, click metrics (IP, User-Agent), and CRUD endpoints.
 
